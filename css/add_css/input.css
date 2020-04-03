@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style:none;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.suggestion{
+    position: absolute;
+    top:100%;
+    left:0;
+    display: none;
+}
+.suggestion{
+
+}
+.suggestion.active{
+    display: block;
+    width: 540px;
+    height: 85px;
+    border: 1px solid #b8b8b8;
+}
+/*.suggestion > li.active{*/
+/**/
+/*}*/
+.inputWrapper{
+    position: relative;
+    display: inline-block;
+}
+.floatDiv{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color:#b8b8b8;
+}
+.split-line{
+    width: 0;
+    height: 16px;
+    border-left: 1px solid;
+    margin: 0 10px;
+}
+.inputWrapper{
+    float: left;
+}
+.inputWrapper + button{
+    float: left;
+}
+.inputWrapper + button:focus{
+    outline:none;
+}
+.inputWrapper + button:hover{
+    box-shadow:1px 1px 1px 0 rgba(0,0,0,0.2);/*向下一像素，向右一像素，左和上零像素*/
+}
+.inputWrapper + button{
+    background: #3988fb;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 0 20px;
+}
+.inputWrapper input[type=text]{
+    border:1px solid #b8b8b8;
+    width: 540px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 8px;
+    font-size: 15px;
+}
+.suggestion li{
+    color: grey;
+}
+.suggestion li:hover{
+    background: #f1f1f1;
+}
+.inputWrapper input[type=text]:focus{
+    outline: none;
+    border-color: #4b94fc;
+}/*背吧*/
+
+.inputWrapper svg.icon{
+    width: 20px;
+    height: 20px;
+    fill:#b8b8b8;
+}
+.inputWrapper svg.icon:hover{
+    width: 20px;
+    height: 20px;
+    fill:#4b94fc;
+    cursor: pointer;
+}

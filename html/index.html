@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/add_css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/add_css/input.css">
+
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="../js/at.alicdn.com/t/font_1296223_29z3mjb1fkb.js"></script>
+</head>
+<body>
+<div class="introduction">
+        <div class="Hu"></div>
+        <div class="nav">
+            <ul>
+                <li class="active" ><a href="index.html">首页</a></li>
+                <li>
+                    <a href="course-list.html">公开课 <img class="hot" src="../images/nav_hot.png"></a>
+                </li>
+
+                <li >
+                    <a href="teachers-list.html">授课教师</a>
+                </li>
+                <li ><a href="#">汉语考试</a></li>
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+            </ul>
+        </div>
+
+        <div class="Group1">
+            <div class="Group1_login">
+                <!--<div class="Group1_button">-->
+                    <!--<button id="SueButton" class="SueButton"><a href="login.html">登录</a><span class="circle"></span></button>-->
+                    <!--<button id="SueButton1" class="SueButton"><a href="register.html">注册</a><span class="circle"></span></button>-->
+                <!--</div>-->
+                <!--<script>-->
+                    <!--SueButton.onclick = function () {-->
+                        <!--SueButton.querySelector('.circle').classList.add('active')-->
+                    <!--}-->
+                    <!--SueButton.querySelector('.circle').addEventListener('transitionend',function () {-->
+                        <!--SueButton.querySelector('.circle').classList.remove('active')-->
+                    <!--})-->
+                    <!--SueButton1.onclick = function () {-->
+                        <!--SueButton1.querySelector('.circle').classList.add('active')-->
+                    <!--}-->
+                    <!--SueButton1.querySelector('.circle').addEventListener('transitionend',function () {-->
+                        <!--SueButton1.querySelector('.circle').classList.remove('active')-->
+                    <!--})-->
+                <!--</script>-->
+            </div>
+            <div class="Group1_text">
+                <div class="intro_text1">GMOOC</div>
+                <div class="intro_text2"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // var keyword = document.getElementById('keyword');
+        // var suggestion = document.getElementById('suggestion');  可以省略不写哦
+        keyword.oninput = function (e) {
+            var value = keyword.value
+            if(value) {
+                suggestion.classList.add('active')
+            }else{
+                suggestion.classList.remove('active')
+            }
+        }
+    </script>
+<section>
+    <!--<div class="module">-->
+        <!--<div class="wp">-->
+            <!--<h1>公开课程</h1>-->
+            <!--<div class="module1 eachmod">-->
+                <!--<div class="module1_1 left">-->
+                    <!--<img width="228" height="614" src="../images/module1_1.jpg"/>-->
+                    <!--<p class="fisrt_word">名师授课<br/>专业权威</p>-->
+                    <!--<a class="more" href="course-list.html">查看更多课程 ></a>-->
+                <!--</div>-->
+                <!--<div class="right group_list">-->
+                    <!--<div class="module1_2 box">-->
+                        <!--<div class="imgslide2">-->
+                            <!--<ul class="imgs">-->
+                                <!--<li>-->
+                                    <!--<a href="course-detail.html">-->
+                                        <!--<img width="470" height="330" src="../media/courses/2016/12/python面向对象.jpg" />-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                        <!--<div class="unslider-arrow2 prev"></div>-->
+                        <!--<div class="unslider-arrow2 next"></div>-->
+                    <!--</div>-->
+
+                    <!--<div class="module1_3 box">-->
+                        <!--<a href="course-detail.html">-->
+                            <!--<img width="233" height="190" src="../media/courses/2016/11/mysql.jpg"/>-->
+                        <!--</a>-->
+                        <!--<div class="des">-->
+                            <!--<a href="course-detail.html">-->
+                                <!--<h2 title="django入门">django入门</h2>-->
+                            <!--</a>-->
+                            <!--<span class="fl">难度：<i class="key">初级</i></span>-->
+                            <!--<span class="fr">学习人数：3</span>-->
+                        <!--</div>-->
+                        <!--<div class="bottom">-->
+                            <!--<span class="fl" title="慕课网">慕课网</span>-->
+                            <!--<span class="star fr">0</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="module1_4 box">-->
+                        <!--<a href="course-detail.html">-->
+                            <!--<img width="233" height="190" src="../media/courses/2016/11/57035ff200014b8a06000338-240-135.jpg"/>-->
+                        <!--</a>-->
+                        <!--<div class="des">-->
+                            <!--<a href="course-detail.html">-->
+                                <!--<h2 title="java入门">java入门</h2>-->
+                            <!--</a>-->
+                            <!--<span class="fl">难度：<i class="key">中级</i></span>-->
+                            <!--<span class="fr">学习人数：0</span>-->
+                        <!--</div>-->
+                        <!--<div class="bottom">-->
+                            <!--<span class="fl" title="北京大学">北京大学</span>-->
+                            <!--<span class="star fr">0</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="module1_5 box">-->
+                        <!--<a href="course-detail.html">-->
+                            <!--<img width="233" height="190" src="../media/courses/2016/11/540e57300001d6d906000338-240-135.jpg"/>-->
+                        <!--</a>-->
+                        <!--<div class="des">-->
+                            <!--<a href="course-detail.html">-->
+                                <!--<h2 title="python入门">python入门</h2>-->
+                            <!--</a>-->
+                            <!--<span class="fl">难度：<i class="key">中级</i></span>-->
+                            <!--<span class="fr">学习人数：0</span>-->
+                        <!--</div>-->
+                        <!--<div class="bottom">-->
+                            <!--<span class="fl" title="南京大学">南京大学</span>-->
+                            <!--<span class="star fr">0</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="module1_6 box">-->
+                        <!--<a href="course-detail.html">-->
+                            <!--<img width="233" height="190" src="../media/courses/2016/11/57035ff200014b8a06000338-240-135_dHfj8Nq.jpg"/>-->
+                        <!--</a>-->
+                        <!--<div class="des">-->
+                            <!--<a href="course-detail.html">-->
+                                <!--<h2 title="java入门2">java入门2</h2>-->
+                            <!--</a>-->
+                            <!--<span class="fl">难度：<i class="key">高级</i></span>-->
+                            <!--<span class="fr">学习人数：0</span>-->
+                        <!--</div>-->
+                        <!--<div class="bottom">-->
+                            <!--<span class="fl" title="慕课网2">慕课网2</span>-->
+                            <!--<span class="star fr">0</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="module1_7 box">-->
+                        <!--<a href="course-detail.html">-->
+                            <!--<img width="233" height="190" src="../media/courses/2016/11/57035ff200014b8a06000338-240-135_0nFiBSI.jpg"/>-->
+                        <!--</a>-->
+                        <!--<div class="des">-->
+                            <!--<a href="course-detail.html">-->
+                                <!--<h2 title="java入门3">java入门3</h2>-->
+                            <!--</a>-->
+                            <!--<span class="fl">难度：<i class="key">初级</i></span>-->
+                            <!--<span class="fr">学习人数：1</span>-->
+                        <!--</div>-->
+                        <!--<div class="bottom">-->
+                            <!--<span class="fl" title="慕课网3">慕课网3</span>-->
+                            <!--<span class="star fr">0</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="module1_8 box">-->
+                        <!--<a href="course-detail.html">-->
+                            <!--<img width="233" height="190" src="../media/courses/2016/11/540e57300001d6d906000338-240-135_MSIqfvw.jpg"/>-->
+                        <!--</a>-->
+                        <!--<div class="des">-->
+                            <!--<a href="course-detail.html">-->
+                                <!--<h2 title="python入门2">python入门2</h2>-->
+                            <!--</a>-->
+                            <!--<span class="fl">难度：<i class="key">中级</i></span>-->
+                            <!--<span class="fr">学习人数：0</span>-->
+                        <!--</div>-->
+                        <!--<div class="bottom">-->
+                            <!--<span class="fl" title="慕课网666">慕课网666</span>-->
+                            <!--<span class="star fr">0</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</section>
+<div class="services">
+    <div class="services_text1"></div>
+    <!--<div class="services_text2"></div>-->
+    <div class="services_forma">
+        <div class="forma1">
+            <div class="forma1_icon"></div>
+            <div class="forma1_text">Moblie Apps</div>
+            <div class="services_text3"></div>
+        </div>
+        <div class="forma2">
+            <div class="forma2_icon"></div>
+            <div class="forma2_text">Wordpress Sites</div>
+            <div class="services_text3"></div>
+        </div>
+        <div class="forma3">
+            <div class="forma3_icon"></div>
+            <div class="forma3_text">Ecommerce System</div>
+            <div class="services_text3"></div>
+        </div>
+    </div>
+</div>
+<div class="about-us">
+    <div class="rounded-rectangle1">
+        <div class="about-us-text1"></div>
+        <div class="about-us-text2"></div>
+    </div>
+    <div class="rounded-rectangle2">
+        <div class="rounded-shadow"></div>
+    </div>
+</div>
+<div class="partner">
+    <div class="logo"></div>
+    <div class="partner-logo">
+        <div class="puma-bg">
+            <div class="puma"></div>
+        </div>
+        <div class="google-bg">
+            <div class="google"></div>
+        </div>
+        <div class="reebok-bg"
+        ><div class="reebok"></div>
+        </div>
+        <div class="umbro-bg">
+            <div class="umbro"></div>
+        </div>
+    </div>
+</div>
+<div class="hire">
+    <div class="rounded-rectangle6">
+        <div class="layer31"></div>
+        <div class="hire-text1"></div>
+        <div class="shape9"></div>
+        <div class="hire-text2"></div>
+        <div class="hire-button"><span>HIRE US</span></div>
+    </div>
+</div>
+<div class="sendMessage">
+    <!--<div class="send-text1"></div>-->
+    <!--<div class="send-part">-->
+        <!--<div class="send-part1">-->
+            <!--<div class="send-name"><span style="margin: 8px 0;">Your Name</span></div>-->
+            <!--<div class="send-email"><span style="margin: 8px 0;">Email</span></div>-->
+            <!--<div class="send-subject"><span style="margin: 8px 0;">Subject</span></div>-->
+        <!--</div>-->
+        <!--<div class="send-part2">-->
+            <!--<div class="send-message"><span style="margin-left: 8px;">Type your message</span></div>-->
+        <!--</div>-->
+        <!--<div class="send-part3">-->
+            <!--<div class="send-text2"></div>-->
+            <!--<div class="send-link">-->
+                <!--<div class="fb"></div>-->
+                <!--<div class="Pin"></div>-->
+                <!--<div class="tw"></div>-->
+                <!--<div class="G+"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="send-button"><span style="font-weight: bold; color: white; ">提交</span></div>-->
+    <!--</div>-->
+</div>
+<div class="footer">
+    <div class="footer-text">
+        <div class="quick-link">
+            <ul>
+                <li style="color: #000; font-size: large; font-weight: bold; margin-bottom: 40px;">链接</li>
+                <li>课程</li>
+                <li>游学</li>
+                <li>关于我们</li>
+                <!--<li>Ready To Go</li>-->
+            </ul>
+        </div>
+        <div class="help">
+            <ul>
+                <li style="color: #000; font-size: large; font-weight: bold; margin-bottom: 40px;">帮助</li>
+                <li>学期&条件</li>
+                <li>隐私政策</li>
+                <li>最近课程</li>
+                <li>登录</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <ul>
+                <li style="color: #000; font-size: large; font-weight: bold; margin-bottom: 40px;">联系我们</li>
+                <li>+1(323) 333-3250</li>
+                <li>email@address.com</li>
+                <li>info@domain.com</li>
+            </ul>
+        </div>
+        <div class="subscribe">
+            <ul>
+                <li style="color: #000; font-size: large; font-weight: bold; margin-bottom: 40px;">登录</li>
+                <li>加入我们获取更多信息</li>
+            </ul>
+            <div class="footer-button">
+                <div class="email-address"><span style=" color: grey;">邮箱地址</span></div>
+                <div class="button-click"><span>提交</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-text3">
+        <div class="footer-text4" style="font-size:20px; margin-top: 50px; font-weight:bold;">三亚学院慕课平台</div>
+        <div class="footer-text5" style="font-size:15px; margin-top: 10px; ">GMOOC of SanYa University</div>
+        <!--<div class="footer-text2"></div>-->
+        <!--<div class="footer-text1"></div>-->
+    </div>
+    <div class="rounded-rectangle7"></div>
+</div>
+<section>
+    <ul class="sidebar">
+        <li class="qq">
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2023525077&site=qq&menu=yes"></a>
+        </li>
+        <li class="totop"></li>
+    </ul>
+</section>
+<script src="../js/layui.js"></script>
+<script src="../js/selectUi.js" type='text/javascript'></script>
+<script src="../js/deco-common.js" type='text/javascript'></script>
+<script type="text/javascript" src="../js/plugins/laydate/laydate.js"></script>
+<script src="../js/plugins/layer/layer.js"></script>
+<script src="../js/plugins/queryCity/js/public.js" type="text/javascript"></script>
+<script src="../js/unslider.js" type="text/javascript"></script>
+<script src="../js/plugins/jquery.scrollLoading.js"  type="text/javascript"></script>
+<script src="../js/deco-common.js"  type="text/javascript"></script>
+
+<script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+}
+body{
+    height: 100vh;
+    background: white;
+    min-width: 600px;
+    max-width: 2000px;
+}
+.introduction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.Hu{
+    width: 220px;
+    height: 115px;
+    background: transparent url("../../images/newLogo.png") no-repeat left;
+    z-index:99;
+}
+
+.nav{
+    margin-left: -100px;
+    width:auto;
+    height:115px;
+    /*border:1px solid black;*/
+}
+.nav ul{
+    /*border:1px solid black;*/
+    /*width:auto;*/
+    /*height:18px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav ul li{
+    width:100px; /*每个元素的初始化宽度*/
+    text-align: center;
+    flex:auto;  /*这是关键*/
+    margin-top: 43px;
+    /*border:1px solid black;*/
+}
+/*.nav ul li:nth-child(2) {*/
+    /*margin-top: 38px;*/
+/*}*/
+.nav ul li a{
+    font-size:17px;
+    color:black;
+}
+.nav ul li a:hover{
+    color:#dddae2;
+}
+.Group1{
+    height: 554px;
+    width: 728px;
+    background: transparent url("../../images/digital_design/introduction/Group 1.png") no-repeat center;
+    /*border:1px solid black;*/
+    z-index:99;
+}
+
+.Group1_login{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+
+}
+.SueButton{
+    box-sizing:border-box;
+    display: inline-block;
+    background: none;
+    border:none;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-decoration: none;/*防止用a标签来替代button标签*/
+    font-size:14px;
+    transition: all 0.5s; /*渐变效果，0~0.5秒钟，从无到有的渐变*/
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background: #f1f1f1;
+}
+.SueButton:hover{
+    background: #e5e5e5;
+}
+.SueButton:focus{
+    outline: none;
+    background: #e5e5e5;
+    color:white;
+}
+.SueButton > .circle{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    background: #3784c6;
+    /*transform:translate(-50%,-50%);*/
+    margin-left: -5px;
+    margin-top:-5px;
+    transition:transform 0.8s;
+    visibility: hidden;
+    pointer-events: none;
+    z-index:-1;
+
+}
+.SueButton:hover > .circle.active{
+    transform:scale(10);
+    visibility: visible;
+}
+.Group1_text{
+    height: 554px;
+    width: 728px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.intro_text1{
+    width: 486px;
+    height: 139px;
+    color: #fff;
+    font-size: 80px;
+    margin-left: -50px;/*可有可无*/
+    font-weight: bolder;
+    /*background: transparent url("../../images/digital_design/introduction/Digital Design Agency.png") no-repeat center;*/
+}
+.intro_text2{
+    width: 527px;
+    height: 70px;
+    background: transparent url("../../images/digital_design/introduction/文本段 1.png") no-repeat center;
+
+}
+.services{
+
+}
+.services_text1{
+    width: 473px;
+    height: 130px;
+    margin-top: 100px;
+    margin-left: 180px;
+    background: transparent url("../../images/digital_design/services/推荐课程.png") no-repeat center;
+}
+.services_text2{
+    width: 524px;
+    height: 82px;
+    margin-top: 40px;
+    margin-left: 180px;
+    background: transparent url("../../images/digital_design/services/文本段 2.png") no-repeat center;
+}
+.services_forma{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 40px;
+}
+.forma1_icon{
+    width: 50px;
+    height: 45px;
+    margin-top: 50px;
+    background: transparent url("../../images/digital_design/services/Forma 1.png") no-repeat center;
+    opacity: 1;
+}
+.forma1_text,.forma2_text,.forma3_text{
+    font-weight: bolder;
+    font-size: larger;
+    margin-top: 10px;
+}
+
+.forma2_icon{
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    background: transparent url("../../images/digital_design/services/Forma 2.png") no-repeat center;
+}
+.forma3_icon{
+    width: 50px;
+    height: 40px;
+    margin-top: 50px;
+    background: transparent url("../../images/digital_design/services/Forma 3.png") no-repeat center;
+}
+.services_text3{
+    width: 288px;
+    height: 79px;
+    margin-top: 30px;
+    background: transparent url("../../images/digital_design/services/文本段 3.png") no-repeat center;
+}
+.forma1,.forma2,.forma3{
+    height: 280px;
+    width: 350px;
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-us{
+    display: flex;
+}
+.rounded-rectangle1{
+    margin-top: 300px;
+    width: 800px;
+    height: 648px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: transparent url("../../images/digital_design/About_us/Rounded Rectangle 2 copy 3.png") no-repeat center;
+}
+.about-us-text1{
+    width: 291px;
+    height: 71px;
+    margin-top: 50px;
+    margin-left: -315px;
+    background: transparent url("../../images/digital_design/About_us/关于我们.png") no-repeat center;
+}
+.about-us-text2{
+    width: 513px;
+    height: 306px;
+    margin-top: 30px;
+    margin-left: -100px;
+    background: transparent url("../../images/digital_design/About_us/文本4.png") no-repeat center;
+}
+.rounded-rectangle2{
+    width: 500px;
+    height: 426px;
+    margin-top: 400px;
+    background: transparent url("../../images/digital_design/About_us/layer-shadow.png") no-repeat center;
+    overflow: hidden;
+}
+/*partner*/
+.partner{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.logo{
+    margin-top: 300px;
+    width: 838px;
+    height: 41px;
+    background: transparent url("../../images/digital_design/partner/logo.png") no-repeat center;
+}
+.partner-logo{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+.puma-bg,.google-bg,.reebok-bg,.umbro-bg{
+    background: #f6f6f6;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.puma{
+    width: 120px;
+    height: 60px;
+    margin-bottom: 25px;
+    background: transparent url("../../images/digital_design/partner/puma.png") no-repeat center;
+}
+.google{
+    width: 120px;
+    height: 40px;
+    background: transparent url("../../images/digital_design/partner/Google.png") no-repeat center;
+}
+.reebok{
+    width: 145px;
+    height: 30px;
+    background: transparent url("../../images/digital_design/partner/Reebok.png") no-repeat center;
+}
+.umbro{
+    width: 130px;
+    height: 35px;
+    background: transparent url("../../images/digital_design/partner/umbro.png") no-repeat center;
+}
+/*partner*/
+
+/*hire*/
+.hire{
+    margin-top: 300px;
+}
+.rounded-rectangle6{
+    width: 100%;
+    height: 680px;
+    background: transparent url("../../images/digital_design/Hire/Rounded Rectangle 6.png");
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+/*.layer31{*/
+/*width: 100%;*/
+/*height: 1279px;*/
+/*background: transparent url("../../images/digital_design/Hire/Layer 31.png");*/
+/*}*/
+.hire-text1{
+    width: 375px;
+    height: 17px;
+    margin-top: 200px;
+    background: transparent url("../../images/digital_design/Hire/文本段 5.png");
+}
+.shape9{
+    width: 139px;
+    height: 1px;
+    margin-top: 40px;
+    background: transparent url("../../images/digital_design/Hire/Shape 9.png");
+}
+.hire-text2{
+    width: 557px;
+    height: 26px;
+    margin-top: 50px;
+    background: transparent url("../../images/digital_design/Hire/Creative Minds of The World.png");
+}
+.hire-button{
+    border:1px solid white;
+    height: 60px;
+    width: 200px;
+    margin-top: 60px;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*hire*/
+
+/*sendMessage*/
+.sendMessage{
+    margin-top: 300px;
+}
+.send-text1{
+    width: 248px;
+    height: 104px;
+    margin-left: 180px;
+    background: transparent url("../../images/digital_design/sendMessage/Say Hello to us.png") no-repeat center;
+}
+.send-part{
+    display: flex;
+    margin-left: 180px;
+    margin-right: 180px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.send-part1{
+}
+.send-name,.send-email,.send-subject{
+    background: #f6f6f6;
+    height: 40px;
+    width: 300px;
+    color: grey;
+    border: 1px solid #f6f6f6;
+    line-height: 24px;
+    border-radius: 2px;
+}
+.send-name{
+    margin-top: 80px;
+}
+.send-email{
+    margin-top: 30px;
+}
+.send-subject{
+    margin-top: 30px;
+}
+.send-part2{
+    margin-top: 80px;
+}
+.send-message{
+    background: #f6f6f6;
+    width: 300px;
+    height: 180px;
+    color: grey;
+}
+.send-part3{
+    margin-top: 80px;
+}
+.send-text2{
+    width: 331px;
+    height: 89px;
+    background: transparent url("../../images/digital_design/sendMessage/文本段 6.png") no-repeat center;
+}
+.send-link{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    margin-right: 150px;
+}
+.fb{
+    width: 40px;
+    height: 40px;
+    background: transparent url("../../images/digital_design/sendMessage/Fb.png") no-repeat center;
+}
+.Pin{
+    width: 40px;
+    height: 40px;
+    background: transparent url("../../images/digital_design/sendMessage/Pin.png") no-repeat center;
+}
+.tw{
+    width: 40px;
+    height: 40px;
+    background: transparent url("../../images/digital_design/sendMessage/tw.png") no-repeat center;
+}
+.G+{
+    width: 40px;
+    height: 40px;
+    background: transparent url("../../images/digital_design/sendMessage/G+.png") no-repeat center;
+}
+.send-button{
+    background: #5834c0;
+    width: 600px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+/*sendMessage*/
+
+/*footer*/
+.footer{
+    margin-top: 300px;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 180px;
+    margin-right:440px;
+}
+
+.quick-link li{
+    list-style:none;
+    color: grey;
+    margin-top: 10px;
+}
+.help li{
+    list-style: none;
+    color: grey;
+    margin-top: 10px;
+}
+.contact li{
+    list-style:none;
+    color: grey;
+    margin-top: 10px;
+}
+.subscribe li{
+    list-style:none;
+    color: grey;
+    margin-top: 10px;
+}
+.footer-button{
+    margin-top: 12px;
+    width: 280px;
+    height: 48px;
+    background: #f6f6f6;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+.email-address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.button-click{
+    width: 70px;
+    height: 48px;
+    background: white;
+    color: #5834c0;
+    line-height: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rounded-rectangle7{
+    width: 552px;
+    height: 435px;
+    float: right;
+    margin-top: -450px;
+    background: transparent url("../../images/digital_design/footer/Rounded Rectangle 2 copy 2.png") no-repeat center;
+}
+.footer-text3{
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    border-top: 1px solid grey;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-text1{
+    width: 163px;
+    height: 13px;
+    margin-top: 30px;
+    background: transparent url("../../images/digital_design/footer/Designed by Rikon Rahman.png") no-repeat center;
+}
+.footer-text2{
+    width: 243px;
+    height: 21px;
+    margin-top: 80px;
+    background: transparent url("../../images/digital_design/footer/©2018 Hu Digital Agency.png") no-repeat center;
+}

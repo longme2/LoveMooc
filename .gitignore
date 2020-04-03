@@ -1,0 +1,27 @@
+*.class
+*.log
+*.clock
+
+# Package Files #
+*.jar
+*.war
+*.ear
+target/
+
+# idea
+.idea/
+*.iml
+
+*velocity.log*
+
+### STS ###
+.apt_generated
+.factorypath
+.springBeans
+
+### intellij idea ###
+*.iml
+*.ipr
+*.iws
+.idea
+
